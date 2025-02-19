@@ -57,12 +57,12 @@ ram.runtime = "50M"
     [resources.install_dir]
     group = "www-data:r-x"
 
-    [resources.data_dir]
+    #[resources.data_dir]
 
     [resources.permissions]
     main.url = "/"
 
-    [resources.ports]
+    #[resources.ports]
 
     [resources.apt]
     packages = "mariadb-server, php8.3-gd, php8.3-bcmath, php8.3-zip, php8.3-mbstring, php8.3-curl, php8.3-mysql, php8.3-imap, php8.3-exif, php8.3-ldap"
