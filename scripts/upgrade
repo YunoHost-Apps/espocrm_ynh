@@ -14,6 +14,9 @@ ynh_script_progression "Ensuring downward compatibility..."
 
 ynh_app_setting_set_default --key=php_upload_max_filesize --value=50M
 ynh_app_setting_set_default --key=php_post_max_size --value=50M
+ynh_app_setting_set_default --key=php_max_execution_time --value=180
+ynh_app_setting_set_default --key=php_max_input_time --value=180
+ynh_app_setting_set_default --key=php_memory_limit --value=256M
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
