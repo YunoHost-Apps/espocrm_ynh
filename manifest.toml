@@ -15,6 +15,7 @@ maintainers = ["eric_G"]
 license = "AGPL-3.0-only"
 website = "https://www.espocrm.com"
 demo = "https://www.espocrm.com/demo/"
+admindoc = "https://docs.espocrm.com/"
 code = "https://github.com/espocrm/espocrm"
 
 [integration]
