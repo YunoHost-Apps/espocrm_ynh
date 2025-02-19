@@ -15,8 +15,6 @@ maintainers = ["eric_G"]
 license = "AGPL-3.0-only"
 website = "https://www.espocrm.com"
 demo = "https://www.espocrm.com/demo/"
-admindoc = "https://yunohost.org/packaging_apps"
-userdoc = "https://yunohost.org/apps"
 code = "https://github.com/espocrm/espocrm"
 
 [integration]
