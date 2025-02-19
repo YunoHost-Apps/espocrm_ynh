@@ -1,0 +1,73 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "espocrm"
+name = "EspoCRM"
+description.en = "Web application that allows to evaluate all your company relationships"
+description.fr = "Application web qui permet d'évaluer toutes les relations de votre entreprise"
+
+version = "9.0.4~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "AGPL-3.0-only"
+website = "https://www.espocrm.com"
+demo = "https://www.espocrm.com/demo/"
+admindoc = "https://yunohost.org/packaging_apps"
+userdoc = "https://yunohost.org/apps"
+code = "https://github.com/espocrm/espocrm"
+
+[integration]
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/Espocrm"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/espocrm/espocrm/releases/download/9.0.4/EspoCRM-9.0.4.zip"
+    sha256 = "49e1b0fa76f68f3b9ade9bd47f0bddb8dea97303b040ccdabc11aba6e0685a46"
+
+    # autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+    group = "www-data:r-x"
+
+    [resources.data_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.ports]
+
+    [resources.apt]
+    packages = "mariadb-server, php8.3-gd, php8.3-bcmath, php8.3-zip, php8.3-mbstring, php8.3-curl, php8.3-mysql"
+
+    [resources.database]
+    type = "mysql"

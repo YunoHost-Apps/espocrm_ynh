@@ -1,0 +1,1 @@
+EspoCRM is a free, open-source CRM platform designed to help organizations build and maintain strong customer relationships. It provides a wide range of tools to store, organize, and manage leads, contacts, sales opportunities, marketing campaigns, support cases, and more – all business information in a simple and intuitive interface.
