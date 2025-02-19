@@ -32,8 +32,7 @@ EspoCRM est une plateforme de gestion de la relation client (CRM) libre et gratu
 ## Documentations et ressources
 
 - Site officiel de l’app : <https://www.espocrm.com>
-- Documentation officielle utilisateur : <https://yunohost.org/apps>
-- Documentation officielle de l’admin : <https://yunohost.org/packaging_apps>
+- Documentation officielle de l’admin : <https://docs.espocrm.com/>
 - Dépôt de code officiel de l’app : <https://github.com/espocrm/espocrm>
 - YunoHost Store : <https://apps.yunohost.org/app/espocrm>
 - Signaler un bug : <https://github.com/YunoHost-Apps/espocrm_ynh/issues>
