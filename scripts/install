@@ -13,6 +13,9 @@ source /usr/share/yunohost/helpers
 
 ynh_app_setting_set --key=php_upload_max_filesize --value=50M
 ynh_app_setting_set --key=php_post_max_size --value=50M
+ynh_app_setting_set --key=php_max_execution_time --value=180
+ynh_app_setting_set --key=php_max_input_time --value=180
+ynh_app_setting_set --key=php_memory_limit --value=256M
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -27,10 +30,7 @@ ynh_setup_source --dest_dir="$install_dir"
 #=================================================
 #ynh_script_progression "Adding $app's configuration files..."
 
-#ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
-
-#chmod 400 "$install_dir/some_config_file"
-#chown "$app:$app" "$install_dir/some_config_file"
+#ynh_config_add --template="config.php" --destination="$install_dir/data/config.php"
 
 #=================================================
 # SYSTEM CONFIGURATION
