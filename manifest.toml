@@ -47,19 +47,15 @@ ram.runtime = "50M"
     url = "https://github.com/espocrm/espocrm/releases/download/9.0.4/EspoCRM-9.0.4.zip"
     sha256 = "49e1b0fa76f68f3b9ade9bd47f0bddb8dea97303b040ccdabc11aba6e0685a46"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
     [resources.install_dir]
     group = "www-data:r-x"
 
-    #[resources.data_dir]
-
     [resources.permissions]
     main.url = "/"
-
-    #[resources.ports]
 
     [resources.apt]
     packages = "mariadb-server, php8.3-gd, php8.3-bcmath, php8.3-zip, php8.3-mbstring, php8.3-curl, php8.3-mysql, php8.3-imap, php8.3-exif, php8.3-ldap"
