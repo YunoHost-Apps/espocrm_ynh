@@ -7,7 +7,7 @@ name = "EspoCRM"
 description.en = "Web application that allows to evaluate all your company relationships"
 description.fr = "Application web qui permet d'évaluer toutes les relations de votre entreprise"
 
-version = "9.0.4~ynh1"
+version = "9.0.7~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -25,6 +25,7 @@ architectures = "all"
 multi_instance = true
 
 ldap = false
+
 sso = false
 
 disk = "50M"
@@ -44,25 +45,21 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/espocrm/espocrm/releases/download/9.0.4/EspoCRM-9.0.4.zip"
-    sha256 = "49e1b0fa76f68f3b9ade9bd47f0bddb8dea97303b040ccdabc11aba6e0685a46"
+    url = "https://github.com/espocrm/espocrm/releases/download/9.0.7/EspoCRM-9.0.7.zip"
+    sha256 = "ee2611019aafe808c2dd01fc14f45f8028cd9e6d555e5cbdecf0525e2a92cc14"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
 
     [resources.install_dir]
     group = "www-data:r-x"
 
-    #[resources.data_dir]
-
     [resources.permissions]
     main.url = "/"
 
-    #[resources.ports]
-
     [resources.apt]
-    packages = "mariadb-server, php8.3-gd, php8.3-bcmath, php8.3-zip, php8.3-mbstring, php8.3-curl, php8.3-mysql, php8.3-imap, php8.3-exif, php8.3-ldap"
+    packages = "mariadb-server, php8.4-gd, php8.4-bcmath, php8.4-zip, php8.4-mbstring, php8.4-curl, php8.4-mysql, php8.4-imap, php8.4-exif, php8.4-ldap"
 
     [resources.database]
     type = "mysql"
