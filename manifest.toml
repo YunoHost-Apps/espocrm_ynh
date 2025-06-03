@@ -7,7 +7,7 @@ name = "EspoCRM"
 description.en = "Web application that allows to evaluate all your company relationships"
 description.fr = "Application web qui permet d'évaluer toutes les relations de votre entreprise"
 
-version = "9.0.7~ynh1"
+version = "9.0.7~ynh2"
 
 maintainers = ["eric_G"]
 
