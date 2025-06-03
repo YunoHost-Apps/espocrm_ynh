@@ -7,7 +7,7 @@ name = "EspoCRM"
 description.en = "Web application that allows to evaluate all your company relationships"
 description.fr = "Application web qui permet d'évaluer toutes les relations de votre entreprise"
 
-version = "9.0.7~ynh2"
+version = "9.1.5~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/espocrm/espocrm/releases/download/9.0.7/EspoCRM-9.0.7.zip"
-    sha256 = "ee2611019aafe808c2dd01fc14f45f8028cd9e6d555e5cbdecf0525e2a92cc14"
+    url = "https://github.com/espocrm/espocrm/releases/download/9.1.5/EspoCRM-9.1.5.zip"
+    sha256 = "c907881dca2f68b57a49ff9d3f32ca97f14b09a8b9f28e7f6924afc8a52a946f"
 
     autoupdate.strategy = "latest_github_release"
 
