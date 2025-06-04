@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "espocrm"
 name = "EspoCRM"
-description.en = "Web application that allows to evaluate all your company relationships"
-description.fr = "Application web qui permet d'évaluer toutes les relations de votre entreprise"
+description.en = "Customer Relationship Management application"
+description.fr = "Application de gestion des relations avec les clients"
 
 version = "9.1.5~ynh2"
 
