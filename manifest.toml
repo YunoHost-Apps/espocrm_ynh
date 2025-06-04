@@ -7,7 +7,7 @@ name = "EspoCRM"
 description.en = "Web application that allows to evaluate all your company relationships"
 description.fr = "Application web qui permet d'évaluer toutes les relations de votre entreprise"
 
-version = "9.1.5~ynh1"
+version = "9.1.5~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -57,6 +57,10 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+    api.url = "/api"
+    api.allowed = "visitors"
+    api.auth_header = false
+    api.show_tile = false
 
     [resources.apt]
     packages = "mariadb-server, php8.4-xml, php8.4-gd, php8.4-bcmath, php8.4-zip, php8.4-mbstring, php8.4-curl, php8.4-mysql, php8.4-imap, php8.4-exif, php8.4-ldap"
