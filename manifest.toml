@@ -4,10 +4,10 @@ packaging_format = 2
 
 id = "espocrm"
 name = "EspoCRM"
-description.en = "Web application that allows to evaluate all your company relationships"
-description.fr = "Application web qui permet d'évaluer toutes les relations de votre entreprise"
+description.en = "Customer Relationship Management application"
+description.fr = "Application de gestion des relations avec les clients"
 
-version = "9.1.5~ynh2"
+version = "9.1.5~ynh3"
 
 maintainers = ["eric_G"]
 
@@ -19,13 +19,12 @@ admindoc = "https://docs.espocrm.com/"
 code = "https://github.com/espocrm/espocrm"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
 ldap = false
-
 sso = false
 
 disk = "50M"
