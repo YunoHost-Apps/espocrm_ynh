@@ -24,7 +24,7 @@ ynh_script_progression "Upgrading source files..."
 
 # Upgrade documentation: https://docs.espocrm.com/administration/upgrading-manually/
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="data custom client/custom"
-ynh_exec_as_app bin/command migrate
+ynh_exec_as_app $install_dir/bin/command migrate
 
 #=================================================
 # UPDATE A CONFIG FILE
