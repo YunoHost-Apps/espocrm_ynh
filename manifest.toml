@@ -19,7 +19,7 @@ admindoc = "https://docs.espocrm.com/"
 code = "https://github.com/espocrm/espocrm"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -62,7 +62,7 @@ ram.runtime = "50M"
     api.show_tile = false
 
     [resources.apt]
-    packages = "mariadb-server, php8.4-xml, php8.4-gd, php8.4-bcmath, php8.4-zip, php8.4-mbstring, php8.4-curl, php8.4-mysql, php8.4-imap, php8.4-exif, php8.4-ldap"
+    packages = "mariadb-server, php8.5-xml, php8.5-gd, php8.5-bcmath, php8.5-zip, php8.5-mbstring, php8.5-curl, php8.5-mysql, php8.5-imap, php8.5-exif, php8.5-ldap"
 
     [resources.database]
     type = "mysql"
